@@ -1,3 +1,5 @@
+/* Theme by Coin-coin le Canapin */
+
 /*@media screen and (max-width: 1024px), screen and (max-height: 640px) {*/
 
 .app {
@@ -488,6 +490,15 @@
 .message-group .edit-message .edit-operation {
 	padding: 5px 0 0;
 }
+.message-group .edit-message .channel-textarea-inner {
+	clear: left;
+	top: 5px;
+}
+.message-group .comment .markup pre {
+	clear: left;
+	position: relative;
+	top: 5px;
+}
 .status.status-typing {
 	width: 10px !important;
 	right: 0 !important;
@@ -555,12 +566,6 @@
 }
 .channel-textarea-autocomplete-inner ul li.active {
 	padding-left: 10px;
-}
-
-.message-group .comment .markup pre {
-	clear: left;
-	position: relative;
-	top: 5px;
 }
 
 #friends .friends-header {
