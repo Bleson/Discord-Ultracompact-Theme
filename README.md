@@ -8,18 +8,25 @@ Later you'll be able to choose a resolution breakpoint so big windows will keep 
 ![Private chat window](https://cdn.discordapp.com/attachments/201287475254132737/315605335215964160/unknown.png)
 
 ## How to use
-1. Install [BetterDiscord](https://betterdiscord.net/home/).
+1. Install [BetterDiscord](https://betterdiscord.net/home/)
+2. Close Discord
+3. Copy ultracompact.theme.css into this directory %appdata%\betterdiscord\themes\ (Windows) or ~/Library/Preferences/themes (Mac)
+4. Restart Discord
+4. Go to settings, Themes
+5. Enable this theme
+6. Enjoy.
+
+Alternatively :
+1. Install [BetterDiscord](https://betterdiscord.net/home/)
 2. Go to settings, then Custom CSS
-3. Paste theme.css content into the Custom CSS Editor and click Save.
-4. Enjoy.
+3. Paste ultracompact.theme.css content into the Custom CSS Editor and click Save.
 
-
-Known issues :
-* I didn't modified the popup content yet.
+## Known issues :
+* I didn't modified the popups styles yet.
 * Popups coordinates may be weird.
-* I didn't the settings content
+* I didn't modified settings styles
 * Nor some audio related feature styles.
-* I didn't try it in the browser version of Discord, neither on Mac or Linux.
+* I didn't try this theme in the browser version of Discord, neither on Mac or Linux.
 
 Please report any issue (which is not listed here) you'll find using this theme.
 
