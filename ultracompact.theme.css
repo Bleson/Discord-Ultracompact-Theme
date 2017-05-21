@@ -5,7 +5,7 @@
 /*@media screen and (max-width: 1024px), screen and (max-height: 640px) {*/
 
 .app {
-	border-top: 25px solid rgba(0,0,0,.2);
+	margin-top: 6px;
 }
 .titlebar {
 	height: 25px;
@@ -18,6 +18,7 @@
 }
 .guilds-wrapper .guilds {
 	display: flex;
+	padding-top: 2px;
 	padding: 0;
 	height: auto;
 	align-content: flex-start;
@@ -312,8 +313,18 @@
 	display: flex;
 	flex-direction: column;
 }
+.message-group.compact .message {
+	margin: 1px 0;
+}
+.message-group.compact .message .message-text .markup {
+	text-indent: 0;
+	padding-left: 0;
+}
+.message-group.compact.message-group {
+	padding: 0;
+}
 .message-group {
-	padding: 2px 0;
+	padding: 1px 0;
 	margin-left: 5px;
 }
 .message-group .avatar-large {
@@ -325,9 +336,10 @@
 	float: left;
 	margin-right: 5px;
 }
-.message-group h2 strong {
+.message-group h2 strong, .message-group.compact .message .message-text .markup .user-name {
 	font-size: .9rem;
 	line-height: 1.2;
+	font-size: 14px;
 }
 .message-group h2 .highlight-separator {
 	display: none;
@@ -335,18 +347,26 @@
 .message-group h2 .username-wrapper {
 	order: 2;
 }
-.message-group h2 .username-wrapper .user-name:after {
+.message-group .user-name:after {
 	content: ":";
 }
 .message-group h2 .timestamp {
+	margin-top: 0;
+}
+.message-group h2 .timestamp, .message-group.compact .timestamp {
 	order: 1;
 	margin-left: 0;
 	margin-right: 5px;
+	width: auto;
+	text-align: left;
 }
-.message-group h2 .timestamp:before {
+.message-group.compact .timestamp {
+	margin-bottom: 2px;
+}
+.message-group h2 .timestamp:before, .message-group.compact .timestamp:before {
 	content: "[";
 }
-.message-group h2 .timestamp:after {
+.message-group h2 .timestamp:after, .message-group.compact .timestamp:after {
 	content: "]";
 }
 .message-group .comment .markup {
@@ -455,7 +475,7 @@
 }
 .win-buttons {
 	height: auto;
-	top: 4px;
+	top: 6px;
 }
 .header-toolbar {
 	justify-content: flex-start;
@@ -472,16 +492,30 @@
 	margin-left: 0;
 }
 .header-toolbar .separator {
-	margin: 0;
+	display: none;
 }
 .search .search-bar {
 	width: 120px;
+	height: auto;
+	padding-left: 5px;
 }
 .search.open .search-bar, .search.popout-open .search-bar {
 	width: 150px;
 }
 .search .search-bar
 .chat>.title-wrap>.title .channel-name:before {
+	display: none;
+}
+.search .DraftEditor-root {
+	line-height: normal;
+}
+.search .DraftEditor-root .public-DraftEditor-content, .search .DraftEditor-root .public-DraftEditorPlaceholder-root {
+	padding: 0;
+}
+.search .search-bar .icon {
+	top: 0;
+}
+.header-toolbar .separator.separator-win {
 	display: none;
 }
 .message-group .edit-message {
@@ -572,7 +606,7 @@
 
 #friends .friends-header {
 	height: auto;
-	padding: 0 5px;
+	padding: 2px;
 }
 #friends .friends-table {
 	margin-top: 0;
@@ -608,7 +642,7 @@
 	display: none;
 }
 #friends .friends-table .friends-row .friends-column+.friends-column {
-	margin-left: 0;
+	margin-left: 5px;
 }
 .bd-blue #friends .friends-table .friends-row .friends-column-guilds .avatar-small {
 	height: 22px;
@@ -801,6 +835,9 @@
 /* betterdiscord */
 [data-reactid$=".$scroller.$csseditor"] {
 	padding: 2px 5px !important;
+}
+.CodeMirror-sizer {
+	min-width: 0px;
 }
 /*}*/
 
