@@ -455,6 +455,7 @@
 }
 .win-buttons {
 	height: auto;
+	top: 4px;
 }
 .header-toolbar {
 	justify-content: flex-start;
@@ -651,6 +652,156 @@
 #friends .friends-table .friends-row .friends-column-status .status-text {
 	display: none;
 }
+.search-popout .results-group {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.search-popout .results-group .search-clear-history, .search-popout .results-group .search-learn-more {
+	top: 2px;
+}
+.search-popout .results-group .header {
+	padding: 2px 5px;
+}
+.search-popout .option {
+	font-size: 14px;
+	margin: 0;
+	padding: 2px 5px;
+	height: auto;
+}
+.search-popout .option.selected:before {
+	height: 22px;
+	top: auto;
+	top: 2px 5px;
+}
+.search-results-wrap .search-header {
+	line-height: normal;
+	padding: 2px 5px;
+}
+.search-results-wrap .search-header .total-results {
+	padding: 0;
+}
+.search-results-wrap .search-header .tab {
+	padding: 0;
+	margin-right: 5px;
+}
+.search-results-wrap .search-header .tab:last-of-type {
+	margin-right: 5px;
+}
+.search-results-wrap .scroller-wrap .scroller {
+	padding: 2px 5px;
+}
+.search-results-wrap .channel-separator .channel-name {
+	padding: 0;
+}
+.search-results-wrap .search-result:after, .search-results-wrap .search-result:before {
+	display: none;
+}
+.search-results-wrap .search-result .search-result-message.before {
+	transform: none;
+}
+.search-results-wrap .search-result .search-result-message .message-group {
+	padding: 0;
+
+}
+.search-results-wrap .search-result .search-result-message.after, .search-results-wrap .search-result .search-result-message.before {
+	border: none;
+}
+.theme-dark .search-results-wrap .search-result .search-result-message.hit {
+	border: none;
+}
+.message-group .comment {
+	margin-right: 0;
+}
+.ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .sidebar-region .scroller {
+	flex: 0 0 auto;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar {
+	width: auto;
+	padding: 2px 5px;
+}
+.ui-tab-bar.SIDE .ui-tab-bar-header, .ui-tab-bar.SIDE .ui-tab-bar-item {
+	padding: 2px;
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item {
+	line-height: normal;
+	font-size: 14px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-bottom: 0;
+}
+.ui-tab-bar.SIDE .ui-tab-bar-separator {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.social-links {
+	padding: 5px 0;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar {
+	width: auto;
+}
+.ui-standard-sidebar-view .content-region {
+	flex: 1 1 auto;
+}
+.ui-standard-sidebar-view .content-column.default {
+	padding: 5px;
+}
+.ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column {
+	max-width: auto;
+	min-width: 0;
+	min-height: 0;
+}
+.ui-form-title.h2 {
+	font-size: 14px;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+.user-settings-account .user-info-editing, .user-settings-account .user-info-viewing {
+	padding: 5px;
+}
+.ui-flex.flex-horizontal-reverse>.ui-flex, .ui-flex.flex-horizontal-reverse>.ui-flex-child, .ui-flex.flex-horizontal>.ui-flex, .ui-flex.flex-horizontal>.ui-flex-child {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.margin-bottom-20 {
+	margin-bottom: 5px;
+}
+.margin-top-60 {
+	margin-top: 5px;
+}
+.margin-top-40 {
+	margin-top: 5px;
+}
+.ui-form-title.h5 {
+	line-height: normal;
+}
+.margin-bottom-8 {
+	margin-bottom: 5px;
+}
+.ui-button.small.grow {
+	min-height: 0;
+	min-width: 30px;
+}
+.ui-button {
+	padding: 2px 5px;
+}
+.ui-standard-sidebar-view .tools {
+	padding-top: 30px;
+}
+.user-settings-appearance .preview {
+	height: auto;
+}
+.user-settings-appearance .preview-inner {
+	top: auto;
+}
+.user-settings-appearance .message-group {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* betterdiscord */
+[data-reactid$=".$scroller.$csseditor"] {
+	padding: 2px 5px !important;
+}
 /*}*/
 
 @media screen and (max-width: 640px) {
@@ -664,5 +815,10 @@
 	.message-group .comment .attachment-image a, .message-group .comment .attachment-image canvas, .message-group .comment .attachment-image img {
 		max-width: 220px;
 		height: auto;
+	}
+}
+@media screen and (max-width: 768px) {
+	.search-results-wrap {
+		width: 100%;
 	}
 }
