@@ -2,6 +2,9 @@
 
 /*@media screen and (max-width: 1024px), screen and (max-height: 640px) {*/
 
+#app-mount { // empty selector fixes an issue when using this file as a Custom CSS instead of a theme
+	
+}
 .app {
 	border-top: 25px solid rgba(0,0,0,.2);
 }
