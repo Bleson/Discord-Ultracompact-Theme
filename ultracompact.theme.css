@@ -1,10 +1,9 @@
 //META{"name":"Ultra Compact","description":"A compact theme optimized for small windows.","author":"Coin-coin le Canapin","version":"0.1"}*//
 
+{} /* fixes an issue when using this file as a Custom CSS instead of a theme */
+
 /*@media screen and (max-width: 1024px), screen and (max-height: 640px) {*/
 
-#app-mount { // empty selector fixes an issue when using this file as a Custom CSS instead of a theme
-	
-}
 .app {
 	border-top: 25px solid rgba(0,0,0,.2);
 }
@@ -372,8 +371,11 @@
 .embed {
 	padding: 0 5px;
 }
+.chat .messages-wrapper {
+	padding-bottom: 5px;
+}
 .chat .divider {
-	margin: 15px;
+	margin: 10px;
 }
 .chat .divider>span {
 	font-size: 12px ;
@@ -533,7 +535,6 @@
 }
 .channel-members .member {
 	padding: 1px 5px;
-	align-item: flex-start;
 }
 .channel-members .member+h2 {
 	margin-top: 5px;
@@ -554,9 +555,6 @@
 }
 .channel-members-loading .member {
 	background-size: contain;
-}
-.scroller-wrap, .scroller-wrap .scroller {
-	overflow-x: hidden;
 }
 .channel-textarea-autocomplete-inner header {
 	padding: 2px 5px;
