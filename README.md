@@ -2,7 +2,9 @@
 A compact theme optimized for small windows.
 
 This theme is intended to be used on small windows and may be shitty on big ones.
+
 It is compatible with any style mode (light, dark, cosy or compact).
+
 Later you'll be able to choose a resolution breakpoint so big windows will keep displaying your default theme.
 
 ![Private chat window](https://cdn.discordapp.com/attachments/201287475254132737/315605202126503938/unknown.png)
