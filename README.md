@@ -25,7 +25,7 @@ Alternatively :
 There is not much to customize. But you can set your preferred maximum window width and height for wich the theme will be enabled. Just change the corresponding values inside this line :
 > @media screen and (max-width: 1024px), screen and (max-height: 640px) {
 
-## Stuff to know :
+## Good to know
 * I didn't modified much of the settings and popouts styles.
 * I didn't try this theme in the browser version of Discord, neither on Mac or Linux.
 
