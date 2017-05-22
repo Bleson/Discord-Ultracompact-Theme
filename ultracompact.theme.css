@@ -335,6 +335,7 @@
 	position: absolute;
 	background-color: #2e3136;
     border-radius: 3px;
+    right: 0;
 }
 .message-group .btn-option+.btn-reaction {
 	right: 16px;
@@ -577,9 +578,13 @@
 }
 
 .popout {
-	/*top: 50% !important;*/
+	top: 50% !important;
 	left: 50% !important;
-	/*transform: translateX(-50%) translateY(-50%) translateZ(0px) !important;*/
+	transform: translateX(-50%) !important;
+	transform: translateX(-50%) translateY(-50%) translateZ(0px) !important;
+}
+.search-popout {
+	position: fixed;
 }
 .channel-members-wrap {
 	min-width: 0;
