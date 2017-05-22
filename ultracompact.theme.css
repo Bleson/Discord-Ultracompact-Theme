@@ -788,6 +788,12 @@
 .message-group .comment {
 	margin-right: 0;
 }
+.message-group .accessory {
+	flex-wrap: wrap;
+}
+.message-group .accessory > div:not(:last-child) {
+	margin-right: 5px;
+}
 .ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .sidebar-region .scroller {
 	flex: 0 0 auto;
 }
