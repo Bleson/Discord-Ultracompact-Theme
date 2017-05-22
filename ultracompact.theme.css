@@ -157,19 +157,27 @@
 .btn-friends + header {
 	display: none;
 }
-.private-channels .channel .avatar-small, .channel-members .avatar-small {
-	width: 10px;
-	height: 10px;
-	margin-right: 5px;
-	margin-top: 3px;
+.channel-members {
+	max-width: auto;
 }
-.channel-members .avatar-small {
-
+.channel-members-wrap .scroller-wrap {
+	overflow-x: hidden;
+}
+.private-channels .channel .avatar-small, .channel-members .avatar-small {
+	width: 2px;
+	height: 10px;
+	margin-right: 3px;
+	margin-top: 3px;
 }
 .private-channels .status, .channel-members .avatar-small .status {
 	border: none;
 	bottom: 0;
 	right: 0;
+	width: 2px;
+	border-radius: 0;
+}
+.channel-members .avatar-small {
+	margin-top: 2px;
 }
 .private-channels .channel a {
 	padding: 1px 0 1px 5px;
@@ -320,6 +328,20 @@
 	text-indent: 0;
 	padding-left: 0;
 }
+.message-text {
+	position: relative;
+}
+.message-group .btn-reaction {
+	position: absolute;
+	background-color: #2e3136;
+    border-radius: 3px;
+}
+.message-group .btn-option+.btn-reaction {
+	right: 16px;
+}
+.message-group .comment>div:hover .btn-option, .message-group .comment>div:hover .btn-reaction, .message-group .system-message>div:hover .btn-option, .message-group .system-message>div:hover .btn-reaction {
+	opacity: 1;
+}
 .message-group.compact.message-group {
 	padding: 0;
 }
@@ -368,6 +390,9 @@
 }
 .message-group h2 .timestamp:after, .message-group.compact .timestamp:after {
 	content: "]";
+}
+.message-group.compact .message:not(.first) .user-name {
+    display: none;
 }
 .message-group .comment .markup {
 	margin-top: 0;
@@ -477,16 +502,15 @@
 	height: auto;
 	top: 6px;
 }
-.header-toolbar {
-	justify-content: flex-start;
-}
 .header-toolbar button span, .win-buttons button, .header-toolbar button {
 	width: 22px;
 	height: 22px;
 	background-size: contain;
 }
 .header-toolbar {
+	justify-content: flex-start;
 	margin-left: 5px;
+	margin-right: 50px;
 }
 .header-toolbar button+button {
 	margin-left: 0;
@@ -570,6 +594,7 @@
 }
 .channel-members .member {
 	padding: 1px 5px;
+	align-items: flex-start;
 }
 .channel-members .member+h2 {
 	margin-top: 5px;
@@ -580,10 +605,22 @@
 .channel-members .member .member-username {
 	font-size: 14px;
 	line-height: 15px;
+	justify-content: space-between;
 }
 .channel-members .member .member-inner {
-    max-width: calc(100% - 10px);
     width: auto;
+    overflow: hidden;
+    flex: 1;
+}
+.channel-members .bot-tag {
+	font-size: 0;
+	line-height: normal;
+	height: auto;
+	margin-left: 2px;
+}
+.channel-members .bot-tag:after {
+	content: "B";
+	font-size: 10px;
 }
 .channel-members-loading .heading, .channel-members-loading .member {
 	width: auto;
@@ -780,7 +817,7 @@
 	padding: 5px;
 }
 .ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column {
-	max-width: auto;
+	max-width: initial;
 	min-width: 0;
 	min-height: 0;
 }
@@ -831,14 +868,36 @@
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.ui-standard-sidebar-view .content-region {
+	max-width: 100%;
+}
+.chat .new-messages-bar {
+	left: 0;
+	right: auto;
+	background-color: rgba(114,137,218,1);
+	box-shadow: 0 5px 3px 0 rgba(0,0,0,.5);
+}
+.chat .new-messages-bar button {
+	padding: 0 5px;
+}
+.chat .new-messages-bar button:first-child {
+	font-size: 12px;
+}
 
 /* betterdiscord */
 [data-reactid$=".$scroller.$csseditor"] {
 	padding: 2px 5px !important;
+	/*max-width: 100% !important;*/
 }
 .CodeMirror-sizer {
 	min-width: 0px;
+}/*
+.ui-standard-sidebar-view, .ui-standard-sidebar-view * {
+	max-width: 100%;
 }
+.ui-standard-sidebar-view .content-region .scroller-wrap {
+	padding-right: 76px;
+}*/
 /*}*/
 
 @media screen and (max-width: 640px) {
