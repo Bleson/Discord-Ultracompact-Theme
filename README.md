@@ -7,8 +7,9 @@ It is compatible with any style mode (light, dark, cosy or compact).
 
 Later you'll be able to choose a resolution breakpoint so big windows will keep displaying your default theme.
 
-![Private chat window](https://cdn.discordapp.com/attachments/201287475254132737/315605202126503938/unknown.png)
-![Private chat window](https://cdn.discordapp.com/attachments/201287475254132737/315605335215964160/unknown.png)
+![Private chat window](https://cdn.discordapp.com/attachments/201287475254132737/316013406132109322/unknown.png)
+![Channel window](https://cdn.discordapp.com/attachments/201287475254132737/316013438180786177/unknown.png)
+![Channel window light](https://cdn.discordapp.com/attachments/201287475254132737/316013359176613898/unknown.png)
 
 ## How to use
 1. Close Discord
