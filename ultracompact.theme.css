@@ -2,7 +2,11 @@
 
 {} /* fixes an issue when using this file as a Custom CSS instead of a theme */
 
-/*@media screen and (max-width: 1024px), screen and (max-height: 640px) {*/
+
+/* You can change the maximum width and height for which this theme will be enabled */
+
+/* 1024 ; 600 */
+@media screen and (max-width: 9999px), screen and (max-height: 9999px) {
 
 .app {
 	margin-top: 6px;
@@ -10,6 +14,7 @@
 .titlebar {
 	height: 25px;
 }
+
 .guilds-wrapper {
 	width: 40px;
 }
@@ -120,6 +125,9 @@
 .private-channels .search-bar {
 	height: auto;
     padding: 5px;
+}
+.search-bar, .guild, .chat>.title-wrap>.title,  {
+	-webkit-app-region: no-drag;
 }
 .search-bar input {
 	width: 0;
@@ -909,7 +917,7 @@
 .ui-standard-sidebar-view .content-region .scroller-wrap {
 	padding-right: 76px;
 }*/
-/*}*/
+}
 
 @media screen and (max-width: 640px) {
 	.message-group h2 .timestamp {
