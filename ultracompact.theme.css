@@ -126,7 +126,7 @@
 	height: auto;
     padding: 5px;
 }
-.search-bar, .guild, .chat>.title-wrap>.title {
+.search-bar, .guild, .chat>.title-wrap>.title, .guild-header {
 	-webkit-app-region: no-drag;
 }
 .search-bar input {
